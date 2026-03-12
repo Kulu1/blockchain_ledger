@@ -56,6 +56,8 @@ class Blockchain{
             throw new Error("Trasaction amount must be a positive number")
         } 
 
+        this.pendingTransactions.push(transaction)
+
     }
 
     minePendingTransactions(minerAddress){
